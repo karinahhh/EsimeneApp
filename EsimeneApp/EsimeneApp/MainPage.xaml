@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EsimeneApp.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#77AF69" Padding="24" CornerRadius="0" Opacity="50" Rotation="0">
+            <Label Text="Волкам привет, остальным соболезную" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="АУФ" FontSize="Title" Padding="46,30,46,30"/>
+        <Label Text="только вместе мы - вместе."
+               FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="запомните, а то забудете"/>
+                        <Span Text="безумно можно быть первым" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </StackLayout>
+
+</ContentPage>

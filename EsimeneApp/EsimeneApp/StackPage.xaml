@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EsimeneApp.StackPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label x:Name="lbl" Text="dsf" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="btn" 
+                    Text="нажми сюда"
+                    BackgroundColor="#1F6950" 
+                    BorderColor="#154942" 
+                    BorderWidth="2"
+                    FontAttributes="Bold" 
+                    Clicked="btn_Clicked"
+                    HorizontalOptions="Start"/>
+                <Button x:Name="btn2" 
+                    Text="0"
+                    BackgroundColor="#847A1E" 
+                    BorderColor="#D4D737" 
+                    BorderWidth="2"
+                    FontAttributes="Bold" 
+                    Clicked="btn2_Clicked"
+                    HorizontalOptions="End"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
