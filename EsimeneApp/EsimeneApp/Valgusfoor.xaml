@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EsimeneApp.Valgusfoor">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame x:Name="red" BackgroundColor="#363637" CornerRadius="90" Padding="70" Margin="110,0,110,0">
+                <Label Text="red"  
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+            </Frame>
+            <Frame x:Name="yellow" BackgroundColor="#363637" CornerRadius="90" Padding="70" Margin="110,0,110,0">
+                <Label Text="yellow"  
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+            </Frame>
+            <Frame x:Name="green" BackgroundColor="#363637" CornerRadius="90" Padding="70" Margin="110,0,110,0">
+                <Label Text="green"  
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+            </Frame>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="on"
+                        Text="ВКЛ"
+                        BackgroundColor="#1023AF"
+                        BorderWidth="2"
+                        FontAttributes="Bold" 
+                        Clicked="on_Clicked"
+                        HorizontalOptions="End"/>
+                <Button x:Name="off"
+                        Text="ВЫКЛ"
+                        BackgroundColor="#35C6AC"
+                        BorderWidth="2"
+                        FontAttributes="Bold" 
+                        Clicked="off_Clicked"
+                        HorizontalOptions="End"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
