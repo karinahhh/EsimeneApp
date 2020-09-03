@@ -18,31 +18,78 @@ namespace EsimeneApp
             Label red = new Label()
             {
                 Text="red",
-                TextColor=Color.Red,
+                TextColor=Color.White,
                 FontSize=25
             };
-            Frame red = new Frame()
+            Frame r = new Frame()
             {
-
+                BackgroundColor = Color.Red,
+                Content = red,
+                CornerRadius = 110,
+                Margin = new Thickness(150,0,150,0)
             };
             Label yellow = new Label()
             {
                 Text = "yellow",
-                TextColor = Color.Yellow,
+                TextColor = Color.White,
                 FontSize = 25
+            };
+            Frame y = new Frame()
+            {
+                BackgroundColor = Color.Yellow,
+                Content = yellow,
+                CornerRadius = 110,
+                Margin = new Thickness(150, 0, 150, 0)
             };
             Label green = new Label()
             {
                 Text = "green",
-                TextColor = Color.Green,
+                TextColor = Color.White,
                 FontSize = 25
             };
+            Frame g = new Frame()
+            {
+                BackgroundColor = Color.Green,
+                Content = green,
+                CornerRadius = 110,
+                Margin = new Thickness(150, 0, 150, 0)
+            };
+            Button on = new Button()
+            {
+                Text = "ВКЛ",
+                BackgroundColor = Color.Blue,
+                BorderWidth = 2,
+                FontAttributes = FontAttributes.Bold
+            };
+            Button off = new Button()
+            {
+                Text = "ВЫКЛ",
+                BackgroundColor = Color.Purple,
+                BorderWidth = 2,
+                FontAttributes = FontAttributes.Bold
+            };
+
+
+
             StackLayout stackLayout = new StackLayout()
             {
-                Children = { red, yellow, green }
+                Children = { r, y, g}
             };
-            stackLayout.Orientation = StackOrientation.Horizontal;
+            stackLayout.Orientation = StackOrientation.Vertical;
             Content = stackLayout;
+
+            StackLayout stackLayoutBtn = new StackLayout()
+            {
+                Children = { on, off}
+            };
+            stackLayoutBtn.Orientation = StackOrientation.Vertical;
+            Content = stackLayoutBtn;
+
+            StackOrientation stack = new StackLayout()
+            {
+                Children = {}
+            };
+            Content = stack;
         }
     }
 }
