@@ -111,7 +111,7 @@ namespace EsimeneApp
             Content = stack;
         }
 
-        private void Night_Clicked(object sender, EventArgs e)
+        private async void Night_Clicked(object sender, EventArgs e)
         {
             r.BackgroundColor = Color.Gray;
             y.BackgroundColor = Color.Yellow;
