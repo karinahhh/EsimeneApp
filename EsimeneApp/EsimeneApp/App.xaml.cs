@@ -10,7 +10,7 @@ namespace EsimeneApp
         {
             InitializeComponent();
 
-            MainPage = new Valgusfoor2();
+            MainPage = new stepSlide();
         }
 
         protected override void OnStart()

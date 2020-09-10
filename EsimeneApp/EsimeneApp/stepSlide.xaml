@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EsimeneApp.stepSlide">
+    <ContentPage.Content>
+        <StackLayout Padding="12,12,12,12">
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                <Frame x:Name="Frm" VerticalOptions="FillAndExpand"/>
+                <Slider x:Name="Slider" Minimum="0" Maximum="255" Value="20" ValueChanged="Slider_ValueChanged" HorizontalOptions="FillAndExpand" />
+                <Slider x:Name="Slider2" Minimum="0" Maximum="255" Value="1" ValueChanged="Slider2_ValueChanged" HorizontalOptions="FillAndExpand" />
+                <Slider x:Name="Slider3" Minimum="0" Maximum="255" Value="1" ValueChanged="Slider3_ValueChanged" HorizontalOptions="FillAndExpand"/>
+                <Stepper x:Name="Stepper" Minimum="0" Maximum="100" Increment="2" ValueChanged="Stepper_ValueChanged" HorizontalOptions="End"/>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

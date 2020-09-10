@@ -111,11 +111,11 @@ namespace EsimeneApp
             Content = stack;
         }
 
-        private async void Night_Clicked(object sender, EventArgs e)
+        private void Night_Clicked(object sender, EventArgs e)
         {
-            r.BackgroundColor = Color.Gray;
-            y.BackgroundColor = Color.Yellow;
-            g.BackgroundColor = Color.Gray;
+                r.BackgroundColor = Color.Gray;
+                y.BackgroundColor = Color.Yellow;
+                g.BackgroundColor = Color.Gray;
         }
 
         private void Tap_Tapped(object sender, EventArgs e)
