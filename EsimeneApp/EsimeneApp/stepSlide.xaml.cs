@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,47 +10,51 @@ using Xamarin.Forms.Xaml;
 namespace EsimeneApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class stepSlide : ContentPage
+    public partial class Slider : ContentPage
     {
-        Label red, green, blue;
-
-        public stepSlide()
+        public Slider()
         {
             InitializeComponent();
-            red = new Label()
-            {
-
-            };
         }
         protected override void OnAppearing()
         {
             base.OnAppearing();
+        
         }
         private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
-            if (e.NewValue > 0)
+            if(sender == Slider1)
             {
-                
+                redLabel.Text = String.Format("{0:X2}", (int)e.NewValue);
             }
-        }
-
-        private void Stepper_ValueChanged(object sender, ValueChangedEventArgs e)
-        {
-            if (e.NewValue > 0)
+            else if (sender==Slider2)
             {
-                Slider.Value = e.NewValue;
+                redLabel.Text = String.Format("{0:X2}", (int)e.NewValue);
+            }
+            else if (sender==Slider3)
+            {
+                redLabel.Text = String.Format("{0:X2}", (int)e.NewValue);
+            }
+            box.Color = System.Drawing.Color.FromArgb((int)Slider1.Value,
+                (int)Slider2.Value,
+                (int)Slider3.Value);            
+        }
+
+        private void Stepper1_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            if (e.NewValue>0)
+            {
+                Slider1.Value = e.NewValue;
             }
         }
-
-        private void Slider2_ValueChanged(object sender, ValueChangedEventArgs e)
+        Random clr = new Random();
+        private async void Rand_Clicked(object sender, EventArgs e)
         {
-            if (e.NewValue > 0) { 
-            }
+            Slider1.Value = clr.Next(0, 255);
+            Slider2.Value = clr.Next(0, 255);
+            Slider3.Value = clr.Next(0, 255);
+
         }
 
-        private void Slider3_ValueChanged(object sender, ValueChangedEventArgs e)
-        {
-
-        }
     }
 }
